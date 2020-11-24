@@ -28,8 +28,7 @@ def registrationpage():
     
 
 @app.route("/registration")
-def registration():
-     
+def registration():    
      name = request.form.get("name")
      nationality = request.form.get("nationality")
      sex = request.form.get("sex")
