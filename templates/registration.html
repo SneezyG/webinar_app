@@ -1,0 +1,131 @@
+<!doctype>
+<html lang="en">
+    <head>
+        <title> Registration page </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+        <style>
+            body {
+                margin:0;
+                padding-bottom: 10px;
+                background-color: #f1f1f1;
+                width:100%;
+            }
+            
+            h5 { 
+              text-align: center; 
+              font-size: 16px;
+              font-weight: normal;
+            }
+            div#center {
+                border: 1px solid #808080;
+                background-color: white;
+                margin-top: 50px;
+                width: 100%;
+                padding-top: 30px;
+            }
+            
+            div#contain {
+               width: 95%;
+               margin-top: 12%;
+              }
+                  
+   
+            h4 {
+              margin-top: 20px;
+              text-align: center;
+              font-weight: normal;
+              font-size: 23px;
+              color: #000080;
+            }
+            button {
+              margin-top: 20px;
+              width: 20%;
+              margin-left: 40%;
+            }
+            span#loud {
+              font-weight: bold;
+              font-family: ;
+              font-size: 33px;
+              color: #FF6347;
+            }
+            #chill {
+              color: #FF8C00;
+            }
+            
+      
+       @media only screen and (min-width: 800px) { 
+         div#center { 
+           width: 100%;
+           margin-top: 20px;
+        }
+        
+        div#contain {
+          width: 55%;
+          margin-top: 3%;
+        }
+        
+        h4  {
+          margin-top: 10px;
+        }
+      
+       }
+            
+        </style>
+    </head>
+    <body>
+      
+  <div id="contain" class="container">
+    <h4> TECH<span id="loud">S</span><span id="chill">cript</span></h4>
+      
+    <h5>Programming Made Easy For Everybody</h5>
+<div id="center" class="container" >
+
+    <form role="form" action="{{ url_for('registration') }}" method="post">
+        <div class="form-group">
+            <label class="sr-only" for="name"> NAME</label>
+        <input type="text" name="name" placeholder="Name" class="form-control" id="name" maxlength="50" required>
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="nationality"> Nationality</label>
+        <input type="text" name="nationality" placeholder="Nationality" class="form-control" id="nationality" maxlength="20" required>
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="age"> AGE</label>
+        <input type="number" name="age" placeholder="Age" class="form-control" id="age" maxlength="10" required>
+        </div>
+       <div class="form-group">
+          <label class="sr-only" for="sex">Sex</label>
+          <select class="form-control" id="sex" name="sex">
+            <option value="male" selected>Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="occupation"> occupation</label>
+        <input type="text" name="occupation" placeholder="Occupation" class="form-control" id="occupation" maxlength="20" required>
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="email">EMAIL</label>
+        <input type="email" name="email" placeholder="Email"  class="form-control" id="email" maxlength="100" required>
+        </div>
+        <button type="submit" class="btn btn-danger">submit</button>
+    </form>
+
+</div>   
+</div>
+                                        
+                                        
+
+
+
+
+    
+        
+   
+        
+        
+        
+    </body>
+
+</html>
