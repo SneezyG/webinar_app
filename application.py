@@ -27,7 +27,7 @@ def registrationpage():
     return render_template("registration.html")
     
 
-@app.route("/registration", methods=["POST", "GET"])
+@app.route("/registration", methods=["POST"])
 def registration():
   
    if request.method == "POST":
